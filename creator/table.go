@@ -452,6 +452,7 @@ func (table *Table) GeneratePageBlocks(ctx DrawContext) ([]*Block, DrawContext, 
 
 			ctx.Height = ctx.PageHeight - ctx.Margins.top - ctx.Margins.bottom
 			origHeight = ctx.Height
+			ctx.Page++
 
 			startrow = cell.row - 1
 			yrel = 0
